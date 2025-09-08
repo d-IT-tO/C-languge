@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
     int x1, y1, x2, y2;
@@ -27,9 +28,9 @@ int main(){
     case 'h': x2 = 8; break;
     }
     
-    if (x % 2  == y % 2)
-        puts("black");
-    else puts("white");
+    if ((fabs(x1 - x2) == 1 && fabs(y1 - y2) == 2) || (fabs(x1 - x2) == 2 && fabs(y1 - y2) == 1))
+        puts("correct");
+    else puts("incorrect");
     
     return 0;
 }
