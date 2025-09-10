@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 #include <math.h>
 
 int main(){
@@ -9,11 +10,11 @@ int main(){
     prime_number = true;
     for (int j = 2; j <= (int) sqrt(i) + 1; j++){
       if (i % j == 0){
-        prime_number = False;
+        prime_number = false;
         break;
       }
     }
-    if prime_number
+    if (prime_number)
       printf("%d ", i);
   }
 
