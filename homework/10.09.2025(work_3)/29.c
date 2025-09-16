@@ -1,22 +1,21 @@
 #include <stdio.h>
-#include <stdbool.h>
 #include <math.h>
 
-int main(){
-  int N, count;
-  bool prime_number;
-  scanf("%d", &N);
-  for (int i = 1; i <= N; i++){
-    prime_number = true;
-    for (int j = 2; j <= (int) sqrt(i) + 1; j++){
-      if (i % j == 0){
-        prime_number = false;
-        break;
-      }
+int prime(int num){
+    for (int j = 2; j <= (int) sqrt(num) + 1; j++){
+      if (num % j == 0)
+        return 0;
     }
-    if (prime_number)
-      printf("%d ", i);
-  }
+    return 1;
+}
 
-  return 0;
+int main(){
+    int N;
+    scanf("%d", &N);
+    for (int i = 1; i <= N; i++){
+        if (prime(i))
+        printf("%d ", i);
+    }
+    
+    return 0;
 }
