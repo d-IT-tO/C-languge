@@ -9,5 +9,6 @@ def triangle(n, l):
 
 if __name__ == "__main__":
     t.tracer(0)
-    triangle(5, 400)
+    n, l = map(int, input().split())
+    triangle(n, l)
     t.done()
