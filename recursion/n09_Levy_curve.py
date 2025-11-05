@@ -14,7 +14,8 @@ def fractal(n, l):
 
 if __name__ == "__main__":
     t.tracer(0)
-    fractal(7, 30)
+    n, l = map(int, input().split())
+    fractal(n, l)
     t.update()
     t.done()
 
