@@ -15,7 +15,10 @@ def f(n, l):
         t.right(120)
         f(n-1, l/2)
 
-t.tracer(0)
-f(3, 400)
-t.update()
-t.done()
+
+if __name__ == "__main__":
+    t.tracer(3)
+    n, l = map(int, input().split())
+    f(n, l)
+    t.update()
+    t.done()
