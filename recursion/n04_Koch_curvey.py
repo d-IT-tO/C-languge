@@ -15,6 +15,7 @@ def f_Koch(n, l):
 
 if __name__ == "__main__":
     t.tracer(0)
-    f_Koch(5, 400)
+    n, l = map(int, input().split())
+    f_Koch(n, l)
+    t.update()
     t.done()
-    
