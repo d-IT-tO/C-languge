@@ -15,6 +15,7 @@ def f(n,l):
 
 if __name__ == "__main__":
     t.tracer(3)
-    f(7, 1000)
+    n, l = map(int, input().split())
+    f(n, l)
     t.update()
     t.done()
