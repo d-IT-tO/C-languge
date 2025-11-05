@@ -11,4 +11,5 @@ if __name__ == "__main__":
     t.tracer(0)
     n, l = map(int, input().split())
     triangle(n, l)
+    t.update()
     t.done()
